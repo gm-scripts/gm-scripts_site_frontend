@@ -1,71 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="48"
-   height="48"
-   viewBox="0 0 12.7 12.7"
-   version="1.1"
-   id="svg879"
-   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
-   sodipodi:docname="blog-inkscape.svg">
-  <defs
-     id="defs873" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#4a4a55"
-     bordercolor="#00ff00"
-     borderopacity="1"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="13.8"
-     inkscape:cx="24.155698"
-     inkscape:cy="19.831408"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="true"
-     units="px"
-     inkscape:window-width="1620"
-     inkscape:window-height="1052"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid1442"
-       spacingx="0.21166667"
-       spacingy="0.21166667"
-       color="#0000ff"
-       opacity="0.1254902"
-       empcolor="#0000ff"
-       empopacity="0.25098039"
-       visible="true" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata876">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       id="rect851"
-       style="fill:none;stroke:#ffffff;stroke-width:0.774137;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       d="m 2.54,2.1166667 c -0.5718296,0 -1.0325608,0.4601013 -1.0325608,1.031931 v 4.3872808 c 0,0.5718294 0.4607312,1.0319314 1.0325608,1.0319314 h 1.5478961 c 0,2.0643651 -1.0319306,2.0644911 -1.0319306,2.0644911 2.3224114,0 2.5804571,-2.0644911 2.5804571,-2.0644911 h 4.6449484 c 0.571829,0 1.031931,-0.460102 1.031931,-1.0319314 V 3.1485977 c 0,-0.5718297 -0.460102,-1.031931 -1.031931,-1.031931 z" />
-  </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 12.7 12.7">
+<metadata>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="DynamicGuides" value="1"/>
+</metadata>
+<defs/>
+<g id="layer1" vectornator:layerName="layer1">
+<path stroke="#ffffff" stroke-width="0.63" d="M2.54+2.11667C1.96817+2.11667+1.50744+2.57677+1.50744+3.1486L1.50744+7.53588C1.50744+8.10771+1.96817+8.56781+2.54+8.56781L4.0879+8.56781C4.0879+10.6322+3.05597+10.6323+3.05597+10.6323C5.37838+10.6323+5.63642+8.56781+5.63642+8.56781L10.2814+8.56781C10.8532+8.56781+11.3133+8.10771+11.3133+7.53588L11.3133+3.1486C11.3133+2.57677+10.8532+2.11667+10.2814+2.11667L2.54+2.11667Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
 </svg>

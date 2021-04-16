@@ -54,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,16 +63,16 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:none;stroke:#faffff;stroke-width:0.632;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.5421509,11.218335 1.209591,-6.9850021 h 7.2584311 l 1.208153,6.9850021 z"
+       style="fill:none;stroke:#faffff;stroke-width:0.651556;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.3837719,11.301896 1.241128,-7.167118 h 7.4476761 l 1.239652,7.167118 z"
        id="path894" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.632;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 5.0363227,5.3079485 V 2.8900642 c 0,0 0,1.343269 0,0 0,-1.343269 1.3439153,-1.343269 1.3439153,-1.343269 v 0"
+       style="fill:none;stroke:#ffffff;stroke-width:0.635;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 4.9725,5.169551 V 2.7516667 c 0,0 0,1.343269 0,0 0,-1.343269 1.3439153,-1.343269 1.3439153,-1.343269 v 0"
        id="path900" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.632;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 7.7241534,5.3079485 V 2.8900642 c 0,0 0,1.343269 0,0 0,-1.343269 -1.3439154,-1.343269 -1.3439154,-1.343269"
+       style="fill:none;stroke:#ffffff;stroke-width:0.635;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.7599154,5.169551 V 2.7516667 c 0,0 0,1.343269 0,0 0,-1.343269 -1.3439154,-1.343269 -1.3439154,-1.343269"
        id="path911" />
   </g>
 </svg>
