@@ -1,5 +1,5 @@
 <template lang="pug">
-.home 
+.home.sb-thin 
   section#header
     .skewed( :style="{ backgroundImage: `url(${logoPath})` }" )
       #main-headers
@@ -9,7 +9,7 @@
           .btn-container
             .btn.to-shop Zum Shop
           .btn-container
-            .btn.more-info Mehr erfahren
+            .btn.more-info( @click="scrollTo('#content')" ) Mehr erfahren
   section#content
     h1.main-title  Lorem Ipsum
     p.paragraph. 
@@ -24,20 +24,38 @@
     h2 Dolor sit amet
     p.paragraph. 
       Aute velit laborum enim dolor consequat voluptate ipsum commodo ut exercitation nisi. Ea occaecat tempor officia sint sint irure incididunt laborum exercitation ex. Anim laboris cupidatat esse cillum Lorem labore nostrud quis cillum aute amet ex enim adipisicing. Aliquip tempor velit non consequat commodo. Incididunt Lorem esse veniam et dolore mollit laborum magna cillum labore cillum. Et tempor officia nisi dolore pariatur anim id nulla aute est aliquip. Est tempor aliquip nisi non.
+  InfoFooter
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import InfoFooter from "@/components/Footer.vue";
 
 @Options({
-  components: {},
+  components: {
+    InfoFooter,
+  },
+  watch: {
+    $route() {
+      console.log("route changed!");
+    },
+  },
 })
 export default class Home extends Vue {
   private logoPath = "./icons/gm_logo_inkscape.svg";
+  private scrollTo(elementId: string) {
+    console.log("scrolling to " + elementId);
+    let el = this.$el.querySelector(elementId);
+    console.log(el);
+    el.scrollIntoView({ behavior: "smooth" });
+  }
 }
 </script>
 <style lang="sass">
 .home
+  height: 100vh
+  overflow-y: overlay
+  overflow-x: hidden
   position: relative
   width: calc(100vw - 75px)
   background-color: var(--bg-primary)
@@ -100,19 +118,20 @@ export default class Home extends Vue {
                 box-shadow: 0 0.25rem 0.5rem var(--brand-transparent)
                 transform: translateY(-0.25rem)
                 transition: transform 0.15s, box-shadow 0.15s
+                background-color: var(--brand)
             &:active
               .btn
-                background-color: var(--brand)
-                transform: translateY(0)
-                transition: background-color 0.15s
+                transform: translateY(0) scale(0.95)
+                box-shadow: 0 0 0.25rem var(--brand-transparent)
+                transition: transform 0.05s, box-shadow 0.05s
   #content
-    margin: 0 9rem
+    padding: 2rem 9rem
     text-align: left
     h1
-      font-size: 2rem
+      font-size: 3rem
       color: var(--text-primary)
     h2
-      font-size: 1.8rem
+      font-size: 2rem
       color: var(--text-secondary)
       margin-top: 3rem
     p

@@ -30,7 +30,17 @@ html, body
   text-align: center
   color: #efefff
   .appwindow
+    height: 100vh
     width: calc(100vw - 75px)
     float: right
 .sb-thin
+  scroll-behavior: smooth
+  &::-webkit-scrollbar
+    width: 12px
+  &::-webkit-scrollbar-thumb
+    background-clip: content-box
+    border: 3.5px solid transparent
+    border-radius: 20px
+    background-color: var(--bg-tertiary-transparent)
+    margin-right: 30px
 </style>

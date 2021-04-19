@@ -1,5 +1,5 @@
 <template lang="pug">
-.nav-item( @click="$router.push({ path: itemData.target, })")
+.nav-item( @click="$router.push({ path: itemData.target, })" :class="{ active: active }" )
     .icon-container
       img( :src="itemData.iconSrc" )
     span.label
@@ -11,12 +11,22 @@ import { PropType } from "vue";
 import { Vue, Options } from "vue-class-component";
 import { NavItemInterface } from "../../ts/types/NavItemInterface";
 
+interface NavItemClassInterface {
+  itemData: NavItemInterface | undefined;
+}
+
 @Options({
   props: {
     itemData: Object as PropType<NavItemInterface>,
   },
 })
-export default class NavItem extends Vue {}
+export default class NavItem extends Vue implements NavItemClassInterface {
+  public itemData: any;
+
+  get active(): boolean {
+    return this.itemData.target === this.$route.path;
+  }
+}
 </script>
 
 <style lang="sass">
@@ -34,6 +44,7 @@ export default class NavItem extends Vue {}
       width: 50px
       transform: scale(0.85)
       transition: transform 0.25s
+      opacity: 65%
   .label
     position: absolute
     top: 50%
@@ -48,6 +59,11 @@ export default class NavItem extends Vue {}
       img
         transform: scale(1)
         transition: transform 0.15s
+        opacity: 1
+  &.active
+    border-right: 3px solid var(--text-primary)
+    img
+      opacity: 1
 .expanded
   .nav-item
     .icon-container

@@ -2,7 +2,8 @@
 .nav-bar(:class="{ expanded: expanded }")
   .expand-btn-container
     img.expand-btn(:src="arrow" @click="expand")
-  NavItem(v-for="item in items" :key="item.label" :itemData="item") {{ item.label }}
+  NavItem(v-for="item in items" :key="item.label" :id="item.label.toLowerCase()" :itemData="item") {{ item.label }}
+
 </template>
 
 <script lang="ts">
@@ -26,28 +27,18 @@ export default class NavBar extends Vue {
     },
     {
       iconSrc: "./icons/blog-inkscape.svg",
-      target: "/",
+      target: "/blog",
       label: "Blog",
     },
     {
-      iconSrc: "./icons/changelog-inkscape.svg",
-      target: "/",
-      label: "Changelogs",
-    },
-    {
       iconSrc: "./icons/about-us-inkscape.svg",
-      target: "/",
+      target: "/about",
       label: "About",
     },
     {
       iconSrc: "./icons/shop-inkscape.svg",
-      target: "/",
+      target: "/shop",
       label: "Shop",
-    },
-    {
-      iconSrc: "./icons/controlpanel-inkscape.svg",
-      target: "/",
-      label: "Controlpanel",
     },
   ];
   private expand() {
@@ -68,7 +59,6 @@ export default class NavBar extends Vue {
   position: fixed
   transition: width 0.5s
   z-index: 999999
-  overflow: hidden
   .expand-btn-container
     height: 75px
     position: relative
@@ -80,6 +70,10 @@ export default class NavBar extends Vue {
       top: 12.5px
       transform: scale(0.85)
       transition: transform 0.5s
+      opacity: 65%
+      cursor: pointer
+      &:hover
+        opacity: 1
   &.expanded
     width: 225px
     .expand-btn
