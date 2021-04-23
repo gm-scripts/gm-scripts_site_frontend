@@ -53,7 +53,7 @@ export default class NavItem extends Vue implements NavItemClassInterface {
     opacity: 0
     transition: opacity 0.3s
   &:hover
-    background-color: var(--bg-tertiary-lighter-2)
+    background-color: var(--bg-tertiary-lighter-b)
     transition: background-color 0.5s
     .icon-container
       img

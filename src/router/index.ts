@@ -12,9 +12,9 @@ export const routes: Array<RouteRecordRaw> = [
     name: "Blog",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/blog/Blog.vue"),
-    children: [
-      {}
-    ],
+    // children: [
+    //   {}
+    // ],
   },
   {
     path: "/about",

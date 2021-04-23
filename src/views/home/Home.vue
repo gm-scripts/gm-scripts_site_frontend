@@ -7,7 +7,7 @@
         p Wir bieten Scripts in höchster qualität zu guten Preisen!
         #header-btns
           .btn-container
-            .btn.to-shop Zum Shop
+            .btn.to-shop( @click="$router.push('/shop')" ) Zum Shop
           .btn-container
             .btn.more-info( @click="scrollTo('#content')" ) Mehr erfahren
   section#content
