@@ -20,6 +20,7 @@ export default class App extends Vue {}
 html, body
   margin: 0
   padding: 0
+  background-color: var(--bg-primary)
 *
   box-sizing: border-box
 #app
@@ -34,6 +35,8 @@ html, body
     width: calc(100vw - 75px)
     float: right
 .sb-thin
+  overflow-y: overlay
+  overflow-x: hidden
   scroll-behavior: smooth
   &::-webkit-scrollbar
     width: 12px

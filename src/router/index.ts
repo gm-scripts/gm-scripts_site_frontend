@@ -11,10 +11,16 @@ export const routes: Array<RouteRecordRaw> = [
     path: "/blog",
     name: "Blog",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/blog/Blog.vue"),
-    // children: [
-    //   {}
-    // ],
+      import(/* webpackChunkName: "blog" */ "../views/blog/Blog.vue"),
+  },
+  {
+    //make this shit a nested route
+    path: "/blog/demo",
+    name: "blogentry-demo",
+    component: () =>
+      import(
+        /* webpackChunkName: "blogentry-demo" */ "../views/blog/blogposts/SamplePost.vue"
+      ),
   },
   {
     path: "/about",
@@ -26,7 +32,7 @@ export const routes: Array<RouteRecordRaw> = [
     path: "/shop",
     name: "Shop",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/shop/Shop.vue"),
+      import(/* webpackChunkName: "shop" */ "../views/shop/Shop.vue"),
   },
 ];
 

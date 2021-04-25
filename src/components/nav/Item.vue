@@ -24,7 +24,9 @@ export default class NavItem extends Vue implements NavItemClassInterface {
   public itemData: any;
 
   get active(): boolean {
-    return this.itemData.target === this.$route.path;
+    return (
+      this.itemData.target.split("/")[1] === this.$route.path.split("/")[1]
+    );
   }
 }
 </script>

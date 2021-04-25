@@ -1,8 +1,8 @@
 <template lang="pug">
 .nav-bar(:class="{ expanded: expanded }")
   .expand-btn-container
-    img.expand-btn(:src="arrow" @click="expand")
-  NavItem(v-for="item in items" :key="item.label" :id="item.label.toLowerCase()" :itemData="item") {{ item.label }}
+    img.expand-btn(:src="arrow" @click="expand" title="Expand")
+  NavItem(v-for="item in items" :key="item.label" :id="item.label.toLowerCase()" :itemData="item" :title="item.label") {{ item.label }}
 
 </template>
 

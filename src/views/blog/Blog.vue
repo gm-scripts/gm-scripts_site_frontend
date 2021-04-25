@@ -12,7 +12,7 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component";
 import BlogLink from "@/components/blog/BlogLink.vue";
-import { bpRegistry } from "@/views/blogposts/BlogPostRegistry";
+import { bpRegistry } from "@/views/blog/blogposts/BlogPostRegistry";
 
 @Options({
   components: {
@@ -46,10 +46,12 @@ export default class Blog extends Vue {
     display: grid
     place-items: center
     h1
-      transform: skewY(-4deg) translate(-50%, -50%)
+      text-align: left
+      transform-origin: top left
+      transform: skewY(-4deg)
       position: absolute
-      top: 11vh
-      left: 10vh
+      top: 4.75rem
+      left: 2rem
       font-weight: 600
       font-size: 1.81rem
   #bloglinks

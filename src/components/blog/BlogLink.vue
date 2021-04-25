@@ -11,7 +11,7 @@ li( @click="$router.push('/blog' + linkDat.path)")
 <script lang="ts">
 import { PropType } from "vue";
 import { Vue, Options } from "vue-class-component";
-import { BlogLinkInterface } from "@/views/blogposts/BlogPostRegistry";
+import { BlogLinkInterface } from "@/views/blog/blogposts/BlogPostRegistry";
 
 @Options({
   props: {
